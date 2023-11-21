@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvua25ud4q1cl"]
+
+[ext_resource type="Script" path="res://start_page.gd" id="1_l4u27"]
+[ext_resource type="AudioStream" uid="uid://diotwhcwe8n7h" path="res://sounds/dah.wav" id="3_ao1g7"]
+
+[node name="start_page" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l4u27")
+metadata/_edit_vertical_guides_ = [560.0]
+
+[node name="Text" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 333.0
+offset_top = 85.0
+offset_right = 789.0
+offset_bottom = 341.0
+
+[node name="CodeText" type="LineEdit" parent="Text"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 179.0
+offset_right = 452.0
+offset_bottom = 248.0
+theme_override_font_sizes/font_size = 52
+alignment = 1
+editable = false
+
+[node name="LetterText" type="LineEdit" parent="Text"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 5.0
+offset_right = 326.0
+offset_bottom = 85.0
+theme_override_colors/selection_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 52
+alignment = 1
+
+[node name="generateButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 468.0
+offset_right = 698.0
+offset_bottom = 514.0
+
+[node name="dip" type="AudioStreamPlayer" parent="."]
+
+[node name="dah" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ao1g7")
+
+[connection signal="text_changed" from="Text/LetterText" to="." method="_on_letter_text_text_changed"]
+[connection signal="pressed" from="generateButton" to="." method="_on_generate_button_pressed"]

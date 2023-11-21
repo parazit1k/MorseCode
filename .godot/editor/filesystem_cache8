@@ -1,0 +1,8 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1700558175
+icon.svg::CompressedTexture2D::338972920771617381::1700497253::1700497257::1::::<><>::
+start_page.gd::GDScript::-1::1700499772::0::1::::<>Control<>::
+start_page.tscn::PackedScene::8674565145766922599::1700501281::0::1::::<><>::res://start_page.gd<>uid://diotwhcwe8n7h::::res://sounds/dah.wav
+::res://sounds/::1700498035
+dah.wav::AudioStreamWAV::7750867370828167299::1700498025::1700498035::1::::<><>::
+dip.wav::AudioStreamWAV::545122998801458625::1700498025::1700498035::1::::<><>::
